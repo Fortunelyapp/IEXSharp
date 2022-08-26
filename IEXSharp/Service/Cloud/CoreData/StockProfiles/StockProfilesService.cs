@@ -15,8 +15,8 @@ namespace IEXSharp.Service.Cloud.CoreData.StockProfiles
 			this.executor = executor;
 		}
 
-		public async Task<IEXResponse<CompanyResponse>> CompanyAsync(string symbol) =>
-			await executor.SymbolExecuteAsync<CompanyResponse>("stock/[symbol]/company", symbol);
+		public async Task<IEXResponse<IEXSharpCompanyResponse>> CompanyAsync(string symbol) =>
+			await executor.SymbolExecuteAsync<IEXSharpCompanyResponse>("stock/[symbol]/company", symbol);
 
 		public async Task<IEXResponse<IEnumerable<InsiderRosterResponse>>> InsiderRosterAsync(string symbol) =>
 			await executor.SymbolExecuteAsync<IEnumerable<InsiderRosterResponse>>("stock/[symbol]/insider-roster",

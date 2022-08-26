@@ -26,7 +26,7 @@ namespace IEXSharp.Model.CoreData.Batch.Response
 		public CashFlowsResponse CashFlows { get; set; }
 
 		public List<Chart> Chart { get; set; }
-		public CompanyResponse Company { get; set; }
+		public IEXSharpCompanyResponse IEXSharpCompany { get; set; }
 
 		[JsonPropertyName("delayed-quote")]
 		public DelayedQuoteResponse DelayedQuote { get; set; }

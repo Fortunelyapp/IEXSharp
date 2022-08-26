@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace IEXSharp.Model.CoreData.StockProfiles.Response
 {
-	public class CompanyResponse
+	public class IEXSharpCompanyResponse
 	{
 		public string symbol { get; set; }
 		public string companyName { get; set; }

@@ -12,7 +12,7 @@ namespace IEXSharp.Service.Cloud.CoreData.StockProfiles
 		/// </summary>
 		/// <param name="symbol"></param>
 		/// <returns></returns>
-		Task<IEXResponse<CompanyResponse>> CompanyAsync(string symbol);
+		Task<IEXResponse<IEXSharpCompanyResponse>> CompanyAsync(string symbol);
 
 		/// <summary>
 		/// <see cref="https://iexcloud.io/docs/api/#insider-roster"/>
